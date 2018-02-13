@@ -31,8 +31,8 @@ x,y = digits.data[:-10],digits.target[:-10]
 clf.fit(x,y)
 
 # Test the classifier to see how well it predicts the number from the image. 
-print ('Prediction: ', clf.predict(digits.data[[-5]]))
+print ('Prediction: ', clf.predict(digits.data[[-4]]))
 
 # Plot the image to see if what the classifier predicts matches what we expect.
-plt.imshow(digits.images[-5], cmap=plt.cm.gray_r,interpolation='nearest')
+plt.imshow(digits.images[-4], cmap=plt.cm.gray_r,interpolation='nearest')
 plt.show()
