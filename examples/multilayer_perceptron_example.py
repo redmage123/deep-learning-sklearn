@@ -15,5 +15,9 @@ model = MLPClassifier(activation = 'relu')
 model.fit (xs,ys)
 
 print ('score: ',model.score(xs,ys))
+print ("Passed in 1,0")
+print('predicted output is: ',model.predict([[1,0]]))
 
+print ("Passed in 0,0")
+print('predicted output is: ',model.predict([[0,0]]))
 
